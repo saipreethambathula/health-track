@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+
+.sidebar {
+  background: #2fa4a4;
+  color: #fff;
+  padding: 20px;
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar li {
+  margin: 15px 0;
+}
+.icon{
+  width: 22px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  background: #f4f9f9;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.header .notifications i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Health Metrics Cards */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card i {
+  font-size: 30px;
+  color: #2fa4a4;
+  margin-bottom: 10px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background: #2fa4a4;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* Lists */
+.prescriptions ul {
+  list-style: disc inside;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.profile-info p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

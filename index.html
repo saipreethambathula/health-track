@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthTrack Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>HealthTrack</h2>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fas fa-home icon"></i> Overview</a></li>
+          <li><a href="#"><i class="fas fa-calendar-check icon"></i> Appointments</a></li>
+          <li><a href="#"><i class="fas fa-pills icon"></i> Prescriptions</a></li>
+          <li><a href="#"><i class="fas fa-file-medical-alt icon"></i> Reports</a></li>
+          <li><a href="#"><i class="fas fa-cog icon"></i> Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="profile">
+            <i class="fa fa-user"></i>
+          <span>John Doe</span>
+        </div>
+        <div class="notifications">
+          <i class="fas fa-bell"></i>
+        </div>
+      </header>
+
+      <!-- Health Metrics Cards -->
+      <section class="metrics">
+        <div class="card">
+          <i class="fas fa-heart"></i>
+          <h3>Heart Rate</h3>
+          <p>72 bpm</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Blood Pressure</h3>
+          <p>120/80 mmHg</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-lungs"></i>
+          <h3>Oxygen Level</h3>
+          <p>98%</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-weight"></i>
+          <h3>BMI</h3>
+          <p>22.5</p>
+        </div>
+      </section>
+
+      <!-- Appointments Table -->
+      <section class="appointments">
+        <h2 style="margin-bottom: 8px;">Upcoming Appointments</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Doctor</th>
+              <th>Department</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>15 Sep 2025</td>
+              <td>Dr. Smith</td>
+              <td>Cardiology</td>
+              <td>Confirmed</td>
+            </tr>
+            <tr>
+              <td>20 Sep 2025</td>
+              <td>Dr. Lee</td>
+              <td>General</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Prescription Section -->
+      <section class="prescriptions">
+        <h2 style="margin-bottom: 8px;">Prescriptions</h2>
+        <ul>
+          <li>Aspirin - 100mg, Dr. Smith, 7 days</li>
+          <li>Vitamin D - 5000 IU, Dr. Lee, 14 days</li>
+        </ul>
+      </section>
+
+      <!-- Patient Profile -->
+      <section class="profile-info">
+        <h2>Patient Profile</h2>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Age:</strong> 35</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Email:</strong> john@example.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Doctor Assigned:</strong> Dr. Smith</p>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
